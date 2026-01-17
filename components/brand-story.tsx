@@ -1,41 +1,96 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 export function BrandStory() {
+  const [scrollY, setScrollY] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY)
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  // Calculate parallax offsets - constrained to prevent too much horizontal movement
+  const parallaxShift = Math.min(Math.max(scrollY * 0.05, 0), 40)
+  const parallax1 = parallaxShift
+  const parallax2 = -parallaxShift * 0.5
+  const parallax3 = parallaxShift * 0.3
+
   return (
     <section className="py-16 lg:py-24 bg-[#faf6f1] overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Image side with actual brand imagery */}
-          <div className="relative">
-            <div className="absolute -top-6 -left-6 w-full h-full bg-pink rounded-3xl" />
-            <div className="relative">
-              <div className="relative z-10 bg-background rounded-3xl p-8 flex items-center justify-center">
-                <Image
-                  src="/specialty-coffee-bag-ethiopia-chelbesa-filter-pink.jpg"
-                  alt="Illegal Beans Coffee"
-                  width={400}
-                  height={500}
-                  className="transform -rotate-6 hover:rotate-0 transition-transform duration-500"
-                />
-                <Image
-                  src="/specialty-coffee-bag-colombia-pink-green-stripes-f.jpg"
-                  alt="Illegal Beans Coffee"
-                  width={400}
-                  height={500}
-                  className="absolute transform rotate-6 hover:rotate-0 transition-transform duration-500 opacity-90"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 bg-[#2d7d4f] text-[#faf6f1] p-6 rounded-2xl z-20 shadow-xl">
-                <p className="text-4xl font-bold">2019</p>
-                <p className="text-sm opacity-80">od založení</p>
+          {/* Layered Image Stack with Parallax */}
+          <div className="relative h-[450px] sm:h-[550px] flex items-center justify-center z-10">
+            {/* Background Pink Layer (Bottom) */}
+            <div
+              className="absolute w-[95%] h-[95%] bg-pink rounded-[40px]"
+              style={{
+                transform: `translate(${-15 + parallax2}px, ${-15 + parallax1}px) rotate(-2deg)`,
+                opacity: 0.6
+              }}
+            />
+
+            {/* Hidden/Peeking Card 1 - Smaller */}
+            <div
+              className="absolute w-3/5 h-3/5 bg-white p-2 rounded-2xl shadow-xl overflow-hidden"
+              style={{
+                transform: `translate(${30 + parallax3}px, ${-50 + parallax1}px) rotate(8deg)`,
+                zIndex: 5
+              }}
+            >
+              <Image
+                src="/ig-4.jpg"
+                alt="Illegal Beans Community"
+                fill
+                className="object-cover opacity-70"
+              />
+            </div>
+
+            {/* Hidden/Peeking Card 2 - Smaller */}
+            <div
+              className="absolute w-3/5 h-3/5 bg-white p-2 rounded-2xl shadow-xl overflow-hidden"
+              style={{
+                transform: `translate(${-40 + parallax2}px, ${40 + parallax3}px) rotate(-6deg)`,
+                zIndex: 6
+              }}
+            >
+              <Image
+                src="/ig-5.jpg"
+                alt="Illegal Beans Roastery"
+                fill
+                className="object-cover opacity-70"
+              />
+            </div>
+
+            {/* Main Top Card (Clear Team Photo) */}
+            <div
+              className="relative z-10 w-full h-full bg-black rounded-[40px] shadow-2xl overflow-hidden"
+            >
+              <Image
+                src="/team.jpg"
+                alt="Illegal Beans Team"
+                fill
+                className="object-cover"
+                priority
+              />
+
+              {/* 2019 Badge - stays attached to the main card */}
+              <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-[#2d7d4f] text-[#faf6f1] p-4 sm:p-6 rounded-2xl z-20 shadow-xl">
+                <p className="text-3xl sm:text-4xl font-bold">2019</p>
+                <p className="text-xs sm:text-sm opacity-80">od založení</p>
               </div>
             </div>
           </div>
 
-          {/* Content side */}
-          <div className="space-y-6">
+          {/* Content side - Ensure higher z-index and relative positioning */}
+          <div className="space-y-6 relative z-20 bg-[#faf6f1]/50 lg:bg-transparent p-4 lg:p-0 rounded-3xl backdrop-blur-sm lg:backdrop-blur-none">
             <span className="inline-block text-[#2d7d4f] font-mono text-sm tracking-wider uppercase">Náš příběh</span>
             <h2 className="text-4xl lg:text-5xl font-bold text-background leading-tight">KAFE S PUNKOVÝM DUCHEM</h2>
             <div className="space-y-4 text-background/70 text-lg">

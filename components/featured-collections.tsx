@@ -111,9 +111,9 @@ export function FeaturedCollections() {
                 <TabsTrigger
                   key={cat.id}
                   value={cat.id}
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-medium transition-all duration-300 data-[state=active]:bg-[#faf6f1] data-[state=active]:text-background data-[state=active]:shadow-sm data-[state=active]:scale-[1.02] text-background/60 hover:text-background border-none"
+                  className="flex items-center gap-3 px-8 py-4 rounded-xl font-medium transition-all duration-300 data-[state=active]:bg-[#faf6f1] data-[state=active]:text-background data-[state=active]:shadow-sm data-[state=active]:scale-[1.02] text-background/60 hover:text-background border-none"
                 >
-                  <cat.Icon className="w-5 h-5 shrink-0 transition-transform duration-300" />
+                  <cat.Icon className="w-[30px] h-[30px] shrink-0 transition-transform duration-300" />
                   {cat.label}
                 </TabsTrigger>
               ))}

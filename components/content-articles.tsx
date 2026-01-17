@@ -38,7 +38,7 @@ export function ContentArticles() {
             <span className="inline-block text-[#2d7d4f] font-mono text-sm tracking-wider uppercase mb-2">
               Illegální blog
             </span>
-            <h2 className="text-3xl lg:text-5xl font-bold text-background">COFFEE KNOWLEDGE</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-background">Illegální články</h2>
           </div>
           <Button
             variant="outline"
