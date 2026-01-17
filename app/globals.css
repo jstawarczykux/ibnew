@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Updated all color tokens for Illegal Beans brand - pink, green, dark theme */
+:root {
+  --background: #0a0a0a;
+  --foreground: #faf6f1;
+  --card: #141414;
+  --card-foreground: #faf6f1;
+  --popover: #141414;
+  --popover-foreground: #faf6f1;
+  --primary: #f5b8d5;
+  --primary-foreground: #0a0a0a;
+  --secondary: #2d7d4f;
+  --secondary-foreground: #faf6f1;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --accent: #f5b8d5;
+  --accent-foreground: #0a0a0a;
+  --destructive: #ef4444;
+  --destructive-foreground: #faf6f1;
+  --border: #333333;
+  --input: #262626;
+  --ring: #f5b8d5;
+  --chart-1: #f5b8d5;
+  --chart-2: #2d7d4f;
+  --chart-3: #faf6f1;
+  --chart-4: #a3a3a3;
+  --chart-5: #333333;
+  --radius: 0.625rem;
+  --sidebar: #141414;
+  --sidebar-foreground: #faf6f1;
+  --sidebar-primary: #f5b8d5;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #262626;
+  --sidebar-accent-foreground: #faf6f1;
+  --sidebar-border: #333333;
+  --sidebar-ring: #f5b8d5;
+  /* Custom brand colors */
+  --cream: #faf6f1;
+  --pink: #f5b8d5;
+  --green: #2d7d4f;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #faf6f1;
+  --card: #141414;
+  --card-foreground: #faf6f1;
+  --popover: #141414;
+  --popover-foreground: #faf6f1;
+  --primary: #f5b8d5;
+  --primary-foreground: #0a0a0a;
+  --secondary: #2d7d4f;
+  --secondary-foreground: #faf6f1;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --accent: #f5b8d5;
+  --accent-foreground: #0a0a0a;
+  --destructive: #ef4444;
+  --destructive-foreground: #faf6f1;
+  --border: #333333;
+  --input: #262626;
+  --ring: #f5b8d5;
+  --chart-1: #f5b8d5;
+  --chart-2: #2d7d4f;
+  --chart-3: #faf6f1;
+  --chart-4: #a3a3a3;
+  --chart-5: #333333;
+  --sidebar: #141414;
+  --sidebar-foreground: #faf6f1;
+  --sidebar-primary: #f5b8d5;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #262626;
+  --sidebar-accent-foreground: #faf6f1;
+  --sidebar-border: #333333;
+  --sidebar-ring: #f5b8d5;
+}
+
+@theme inline {
+  --font-poppins: var(--font-poppins), system-ui, sans-serif;
+  --font-bebas: var(--font-bebas-neue), system-ui, sans-serif;
+  --font-sans: var(--font-poppins), system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  /* Added custom brand color utilities */
+  --color-cream: var(--cream);
+  --color-pink: var(--pink);
+  --color-green: var(--green);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
