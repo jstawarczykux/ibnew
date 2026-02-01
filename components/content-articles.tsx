@@ -9,7 +9,7 @@ const articles = [
     excerpt: "Kompletní průvodce pro začátečníky i pokročilé. Naučíme tě, jak vytáhnout z tvého kávovaru maximum.",
     category: "Jak na to",
     readTime: "5 min",
-    image: "/espresso-machine-brewing-coffee-close-up.jpg",
+    image: "/article_espresso_moody.png",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const articles = [
     excerpt: "Prozkoumej s námi místo, kde kávová magie začala. Historie, regiony a chutové profily.",
     category: "Původ kávy",
     readTime: "8 min",
-    image: "/ethiopian-coffee-farm-landscape-green-hills.jpg",
+    image: "/article_ethiopia_moody.png",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const articles = [
     excerpt: "Věčná debata mezi coffee geeks. Rozebereme rozdíly a pomůžeme ti najít tvůj styl.",
     category: "Degustace",
     readTime: "4 min",
-    image: "/light-and-dark-roasted-coffee-beans-comparison.jpg",
+    image: "/article_roast_moody.png",
   },
 ]
 

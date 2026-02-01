@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { FeaturedCollections } from "@/components/featured-collections"
+import { BrandStory } from "@/components/brand-story"
 import { RecommendedProducts } from "@/components/recommended-products"
 import { ContentArticles } from "@/components/content-articles"
 import { SubscriptionModule } from "@/components/subscription-module"
@@ -14,7 +15,7 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <FeaturedCollections />
-
+      <BrandStory />
       <RecommendedProducts />
       <ContentArticles />
       <SubscriptionModule />

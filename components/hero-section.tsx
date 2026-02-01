@@ -12,7 +12,7 @@ const heroSlides = [
     description: "Pražíme pro tebe kávu, co tě ráno nakopne a odpoledne ti vrátí chuť žít.",
     cta: "Vybrat kafe",
     ctaSecondary: "Chci vás do podniku",
-    image: "/hero_photo.jpg",
+    image: "/hero_photo_moody.png",
   },
   {
     title: "VÁNOČNÍ EDICE",
@@ -20,7 +20,7 @@ const heroSlides = [
     description: "Vánoční limitka s chutí mléčné čokolády a kandovaného pomeranče.",
     cta: "Koupit limitku",
     ctaSecondary: "Vánoční kávy",
-    image: "/christmas-coffee-bag-festive-specialty-coffee-pack.jpg",
+    image: "/christmas_moody.png",
   },
   {
     title: "DESKPRESSO",
@@ -28,7 +28,7 @@ const heroSlides = [
     description: "Blend, co udrží tým v chodu i v pátek v 16:59. Pro firmy a kanceláře.",
     cta: "Objednat",
     ctaSecondary: "Více o B2B",
-    image: "/espresso-blend-coffee-bag-dark-roast-specialty.jpg",
+    image: "/b2b_moody.png",
   },
 ]
 
