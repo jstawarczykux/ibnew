@@ -26,13 +26,6 @@ const products = [
     badge: "Akce",
     badgeType: "sale",
   },
-  {
-    id: 4,
-    name: "Kávové mýdlo Illegal Beans",
-    taste: "Voní jako: káva, citrus, grep",
-    price: 139,
-    badge: "Novinka",
-  },
 ]
 
 export function RecommendedProducts() {
@@ -46,13 +39,13 @@ export function RecommendedProducts() {
           </div>
           <Button
             variant="outline"
-            className="border-[#faf6f1] text-[#faf6f1] hover:bg-[#faf6f1] hover:text-background rounded-full self-start md:self-auto bg-transparent"
+            className="border-[#faf6f1] text-[#faf6f1] hover:bg-[#faf6f1] hover:text-background rounded-none self-start md:self-auto bg-transparent"
           >
             Zobrazit vše
           </Button>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <ProductCard
               key={product.id}

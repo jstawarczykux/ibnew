@@ -93,7 +93,7 @@ export function HeroSection() {
               <div className="flex items-center gap-4">
                 <button
                   onClick={prevSlide}
-                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-background transition-all"
+                  className="w-12 h-12 rounded-lg border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-background transition-all"
                   aria-label="Previous slide"
                 >
                   <ChevronLeft className="h-6 w-6" />
@@ -103,7 +103,7 @@ export function HeroSection() {
                     <button
                       key={idx}
                       onClick={() => setCurrentSlide(idx)}
-                      className={`h-[4px] rounded-full transition-all duration-500 ${idx === currentSlide ? "w-12 bg-[#f5b8d5]" : "w-3 bg-white/30 hover:bg-white/50"
+                      className={`h-[4px] rounded-lg transition-all duration-500 ${idx === currentSlide ? "w-12 bg-[#f5b8d5]" : "w-3 bg-white/30 hover:bg-white/50"
                         }`}
                       aria-label={`Go to slide ${idx + 1}`}
                     />
@@ -111,7 +111,7 @@ export function HeroSection() {
                 </div>
                 <button
                   onClick={nextSlide}
-                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-background transition-all"
+                  className="w-12 h-12 rounded-lg border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-background transition-all"
                   aria-label="Next slide"
                 >
                   <ChevronRight className="h-6 w-6" />

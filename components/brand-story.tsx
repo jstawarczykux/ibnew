@@ -30,7 +30,7 @@ export function BrandStory() {
           <div className="relative h-[450px] sm:h-[550px] flex items-center justify-center z-10">
             {/* Background Pink Layer (Bottom) */}
             <div
-              className="absolute w-[95%] h-[95%] bg-pink rounded-[40px]"
+              className="absolute w-[95%] h-[95%] bg-pink rounded-lg"
               style={{
                 transform: `translate(${-15 + parallax2}px, ${-15 + parallax1}px) rotate(-2deg)`,
                 opacity: 0.6
@@ -39,7 +39,7 @@ export function BrandStory() {
 
             {/* Hidden/Peeking Card 1 - Smaller */}
             <div
-              className="absolute w-3/5 h-3/5 bg-white p-2 rounded-2xl shadow-xl overflow-hidden"
+              className="absolute w-3/5 h-3/5 bg-white p-2 rounded-lg shadow-xl overflow-hidden"
               style={{
                 transform: `translate(${30 + parallax3}px, ${-50 + parallax1}px) rotate(8deg)`,
                 zIndex: 5
@@ -55,7 +55,7 @@ export function BrandStory() {
 
             {/* Hidden/Peeking Card 2 - Smaller */}
             <div
-              className="absolute w-3/5 h-3/5 bg-white p-2 rounded-2xl shadow-xl overflow-hidden"
+              className="absolute w-3/5 h-3/5 bg-white p-2 rounded-lg shadow-xl overflow-hidden"
               style={{
                 transform: `translate(${-40 + parallax2}px, ${40 + parallax3}px) rotate(-6deg)`,
                 zIndex: 6
@@ -71,7 +71,7 @@ export function BrandStory() {
 
             {/* Main Top Card (Clear Team Photo) */}
             <div
-              className="relative z-10 w-full h-full bg-black rounded-[40px] shadow-2xl overflow-hidden"
+              className="relative z-10 w-full h-full bg-black rounded-lg shadow-2xl overflow-hidden"
             >
               <Image
                 src="/team.jpg"
@@ -82,7 +82,7 @@ export function BrandStory() {
               />
 
               {/* 2019 Badge - stays attached to the main card */}
-              <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-[#2d7d4f] text-[#faf6f1] p-4 sm:p-6 rounded-2xl z-20 shadow-xl">
+              <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-[#2d7d4f] text-[#faf6f1] p-4 sm:p-6 rounded-lg z-20 shadow-xl">
                 <p className="text-3xl sm:text-4xl font-bold">2019</p>
                 <p className="text-xs sm:text-sm opacity-80">od založení</p>
               </div>
@@ -90,7 +90,7 @@ export function BrandStory() {
           </div>
 
           {/* Content side - Ensure higher z-index and relative positioning */}
-          <div className="space-y-6 relative z-20 bg-[#faf6f1]/50 lg:bg-transparent p-4 lg:p-0 rounded-3xl backdrop-blur-sm lg:backdrop-blur-none">
+          <div className="space-y-6 relative z-20 bg-[#faf6f1]/50 lg:bg-transparent p-4 lg:p-0 rounded-lg backdrop-blur-sm lg:backdrop-blur-none">
             <span className="inline-block text-[#2d7d4f] font-mono text-sm tracking-wider uppercase">Náš příběh</span>
             <h2 className="text-4xl lg:text-5xl font-bold text-background leading-tight">KAFE S PUNKOVÝM DUCHEM</h2>
             <div className="space-y-4 text-background/70 text-lg">
@@ -117,7 +117,7 @@ export function BrandStory() {
                 <p className="text-sm text-background/60">Specialty grade</p>
               </div>
             </div>
-            <Button size="lg" className="bg-background text-[#faf6f1] hover:bg-background/90 rounded-full px-8 group">
+            <Button size="lg" className="bg-background text-[#faf6f1] hover:bg-background/90 rounded-none px-8 group">
               Celý náš příběh
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>

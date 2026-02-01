@@ -37,13 +37,13 @@ export function NewsletterSignup() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 h-14 px-6 bg-card border-border text-[#faf6f1] placeholder:text-muted-foreground rounded-full focus-visible:ring-pink"
+              className="flex-1 h-14 px-6 bg-card border-border text-[#faf6f1] placeholder:text-muted-foreground rounded-none focus-visible:ring-pink"
             />
             <Button
               type="submit"
               size="lg"
               disabled={status === "loading" || status === "success"}
-              className="h-14 px-8 bg-pink text-background hover:bg-pink/90 rounded-full font-medium"
+              className="h-14 px-8 bg-pink text-background hover:bg-pink/90 rounded-none font-medium"
             >
               {status === "loading" ? (
                 <Loader2 className="h-5 w-5 animate-spin" />

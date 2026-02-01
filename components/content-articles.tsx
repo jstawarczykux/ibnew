@@ -42,7 +42,7 @@ export function ContentArticles() {
           </div>
           <Button
             variant="outline"
-            className="border-background text-background hover:bg-background hover:text-[#faf6f1] rounded-full self-start md:self-auto bg-transparent"
+            className="border-background text-background hover:bg-background hover:text-[#faf6f1] rounded-none self-start md:self-auto bg-transparent"
           >
             Všechny články
           </Button>
@@ -50,8 +50,11 @@ export function ContentArticles() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {articles.map((article) => (
-            <article key={article.id} className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl mb-5">
+            <article
+              key={article.id}
+              className="group cursor-pointer bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+            >
+              <div className="relative overflow-hidden rounded-t-lg mb-0">
                 <Image
                   src={article.image || "/placeholder.svg"}
                   alt={article.title}
@@ -63,18 +66,22 @@ export function ContentArticles() {
                   {article.category}
                 </span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-background/60 mb-3">
-                <Clock className="h-4 w-4" />
-                <span>{article.readTime} čtení</span>
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="flex items-center gap-2 text-sm text-background/60 mb-3">
+                  <Clock className="h-4 w-4" />
+                  <span>{article.readTime} čtení</span>
+                </div>
+                <h3 className="text-xl font-bold text-background mb-3 group-hover:text-[#2d7d4f] transition-colors leading-tight min-h-[3rem] flex items-center">
+                  {article.title}
+                </h3>
+                <p className="text-background/70 mb-6 flex-grow">{article.excerpt}</p>
+                <div className="mt-auto">
+                  <span className="inline-flex items-center text-[#2d7d4f] font-medium group-hover:gap-3 gap-2 transition-all">
+                    Číst dál
+                    <ArrowRight className="h-4 w-4" />
+                  </span>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-background mb-3 group-hover:text-[#2d7d4f] transition-colors">
-                {article.title}
-              </h3>
-              <p className="text-background/70 mb-4">{article.excerpt}</p>
-              <span className="inline-flex items-center text-[#2d7d4f] font-medium group-hover:gap-3 gap-2 transition-all">
-                Číst dál
-                <ArrowRight className="h-4 w-4" />
-              </span>
             </article>
           ))}
         </div>

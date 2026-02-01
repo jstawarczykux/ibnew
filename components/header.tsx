@@ -10,7 +10,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header id="header" className="relative z-50 w-full bg-black pt-[43px] before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[43px] before:bg-[url('/markyza_dark.svg')] before:bg-repeat-x before:z-[1]">
+    <header id="header" className="relative z-50 w-full bg-black pt-[30px] before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[30px] before:bg-[url('/markyza_dark.svg')] before:bg-repeat-x before:bg-contain before:z-[1]">
       <div className="container mx-auto px-4">
         <div className="flex h-[80px] items-center">
           {/* Group Logo and Navigation on the Left */}
@@ -49,23 +49,32 @@ export function Header() {
           </div>
 
           {/* Right side icons */}
-          <div className="flex items-center gap-1">
-            <Button variant="ghost" size="icon" className="text-white hover:text-[#f5b8d5] hover:bg-transparent">
-              <Search className="h-5 w-5" />
-            </Button>
-
-            <Link href="/login" className="flex items-center justify-center h-10 w-10 bg-[#008f6b] text-white hover:bg-[#007a5c] transition-colors">
+          <div className="flex items-center gap-4">
+            {/* User Block */}
+            <Link
+              href="/login"
+              className="flex items-center gap-2 h-[42px] px-4 bg-[#f5b8d5] rounded-full text-black hover:bg-[#ef9ec3] transition-colors"
+            >
               <User className="h-5 w-5" />
+              <span className="text-[14px] font-medium whitespace-nowrap">
+                <span className="font-bold">B2B</span> - LENKA S.
+              </span>
             </Link>
 
-            <Button
-              variant="ghost"
-              size="icon"
-              className="text-white hover:text-[#f5b8d5] hover:bg-transparent relative"
-            >
-              <ShoppingCart className="h-5 w-5" />
-              <span className="sr-only">Košík</span>
-            </Button>
+            <div className="flex items-center gap-1">
+              <Button variant="ghost" size="icon" className="text-white hover:text-[#f5b8d5] hover:bg-transparent">
+                <Search className="h-5 w-5" />
+              </Button>
+
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-white hover:text-[#f5b8d5] hover:bg-transparent relative"
+              >
+                <ShoppingCart className="h-5 w-5" />
+                <span className="sr-only">Košík</span>
+              </Button>
+            </div>
 
             {/* Mobile menu button */}
             <Button

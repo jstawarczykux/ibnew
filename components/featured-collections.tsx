@@ -106,14 +106,14 @@ export function FeaturedCollections() {
         {/* Category tabs using shadcn Tabs */}
         <div className="flex justify-center mb-12">
           <Tabs defaultValue="all" onValueChange={setActiveCategory} className="w-auto">
-            <TabsList className="bg-white p-1 rounded-2xl shadow-sm h-auto">
+            <TabsList className="bg-white p-3 rounded-lg shadow-sm h-auto">
               {categories.map((cat) => (
                 <TabsTrigger
                   key={cat.id}
                   value={cat.id}
-                  className="flex items-center gap-3 px-8 py-4 rounded-xl font-medium transition-all duration-300 data-[state=active]:bg-[#faf6f1] data-[state=active]:text-background data-[state=active]:shadow-sm data-[state=active]:scale-[1.02] text-background/60 hover:text-background border-none"
+                  className="flex items-center gap-3 px-10 py-5 rounded-lg font-medium transition-all duration-300 data-[state=active]:bg-[#faf6f1] data-[state=active]:text-background data-[state=active]:shadow-sm data-[state=active]:scale-[1.02] text-background/60 hover:text-background border-none text-lg"
                 >
-                  <cat.Icon className="w-[30px] h-[30px] shrink-0 transition-transform duration-300" />
+                  <cat.Icon className="w-[45px] h-[45px] shrink-0 transition-transform duration-300" />
                   {cat.label}
                 </TabsTrigger>
               ))}
@@ -140,7 +140,7 @@ export function FeaturedCollections() {
           <Button
             size="lg"
             variant="outline"
-            className="border-background text-background hover:bg-background hover:text-[#faf6f1] rounded-full px-8 bg-transparent"
+            className="border-background text-background hover:bg-background hover:text-[#faf6f1] rounded-none px-8 bg-transparent"
           >
             Zobrazit všechny kávy
           </Button>

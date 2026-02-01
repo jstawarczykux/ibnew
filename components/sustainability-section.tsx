@@ -16,7 +16,7 @@ export function SustainabilitySection() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center group">
-            <div className="inline-flex p-4 bg-white rounded-full mb-6 shadow-lg transform transition-transform duration-300 group-hover:scale-110 border-2 border-black">
+            <div className="inline-flex p-4 bg-white rounded-full mb-6 shadow-lg transform transition-transform duration-300 group-hover:scale-110 border border-black">
               <div className="w-20 h-20 relative">
                 <Image src="/illustrations/sourcing.png" alt="Udržitelný sourcing" fill className="object-contain" />
               </div>
@@ -26,7 +26,7 @@ export function SustainabilitySection() {
           </div>
 
           <div className="text-center group">
-            <div className="inline-flex p-4 bg-white rounded-full mb-6 shadow-lg transform transition-transform duration-300 group-hover:scale-110 border-2 border-black">
+            <div className="inline-flex p-4 bg-white rounded-full mb-6 shadow-lg transform transition-transform duration-300 group-hover:scale-110 border border-black">
               <div className="w-20 h-20 relative">
                 <Image src="/illustrations/direct_trade.png" alt="Direct trade" fill className="object-contain" />
               </div>
@@ -36,7 +36,7 @@ export function SustainabilitySection() {
           </div>
 
           <div className="text-center group">
-            <div className="inline-flex p-4 bg-white rounded-full mb-6 shadow-lg transform transition-transform duration-300 group-hover:scale-110 border-2 border-black">
+            <div className="inline-flex p-4 bg-white rounded-full mb-6 shadow-lg transform transition-transform duration-300 group-hover:scale-110 border border-black">
               <div className="w-20 h-20 relative">
                 <Image src="/illustrations/specialty_grade.png" alt="Specialty grade" fill className="object-contain" />
               </div>
@@ -46,7 +46,7 @@ export function SustainabilitySection() {
           </div>
 
           <div className="text-center group">
-            <div className="inline-flex p-4 bg-white rounded-full mb-6 shadow-lg transform transition-transform duration-300 group-hover:scale-110 border-2 border-black">
+            <div className="inline-flex p-4 bg-white rounded-full mb-6 shadow-lg transform transition-transform duration-300 group-hover:scale-110 border border-black">
               <div className="w-20 h-20 relative">
                 <Image src="/illustrations/small_batches.jpg" alt="Malé várky" fill className="object-contain" />
               </div>

@@ -34,7 +34,7 @@ export function ProductCard({
     const handleDecrease = () => setQuantity(q => Math.max(0, q - 1))
 
     return (
-        <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+        <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
             <div className="relative p-6 pb-0">
                 {/* Badges */}
                 {badge && (
@@ -77,7 +77,7 @@ export function ProductCard({
                     <span className="text-lg font-bold text-background whitespace-nowrap">{price} Kč</span>
                     <div className="flex items-center gap-2">
                         <Select defaultValue="250g">
-                            <SelectTrigger className="w-[85px] h-10 border-gray-200 rounded-lg bg-white text-background px-2">
+                            <SelectTrigger className="w-[85px] !h-12 border-gray-200 rounded-none bg-white text-background px-2">
                                 <SelectValue placeholder="Velikost" />
                             </SelectTrigger>
                             <SelectContent>
@@ -90,12 +90,12 @@ export function ProductCard({
                             <Button
                                 size="sm"
                                 onClick={handleIncrease}
-                                className="bg-[#2d7d4f] text-white hover:bg-[#2d7d4f]/90 rounded-lg px-4 h-10 font-bold whitespace-nowrap"
+                                className="bg-[#2d7d4f] text-white hover:bg-[#2d7d4f]/90 rounded-none px-6 !h-12 font-bold whitespace-nowrap"
                             >
                                 Do košíku
                             </Button>
                         ) : (
-                            <div className="flex items-center bg-[#f0f0f0] rounded-lg h-10 px-1">
+                            <div className="flex items-center bg-[#f0f0f0] rounded-none !h-12 px-1">
                                 <button
                                     onClick={handleDecrease}
                                     className="p-1 text-[#2d7d4f] hover:opacity-70 transition-opacity"
