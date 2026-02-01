@@ -34,7 +34,7 @@ export function ProductCard({
     const handleDecrease = () => setQuantity(q => Math.max(0, q - 1))
 
     return (
-        <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+        <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
             <div className="relative p-6 pb-0">
                 {/* Badges */}
                 {badge && (

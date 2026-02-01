@@ -52,9 +52,9 @@ export function ContentArticles() {
           {articles.map((article) => (
             <article
               key={article.id}
-              className="group cursor-pointer bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+              className="group cursor-pointer bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
             >
-              <div className="relative overflow-hidden rounded-t-lg mb-0">
+              <div className="relative overflow-hidden rounded-t-xl mb-0">
                 <Image
                   src={article.image || "/placeholder.svg"}
                   alt={article.title}

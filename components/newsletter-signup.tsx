@@ -24,7 +24,7 @@ export function NewsletterSignup() {
   return (
     <section className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto bg-gradient-to-r from-pink/20 via-pink/10 to-[#2d7d4f]/20 rounded-3xl p-8 lg:p-16 text-center border border-border">
+        <div className="max-w-4xl mx-auto bg-gradient-to-r from-pink/20 via-pink/10 to-[#2d7d4f]/20 rounded-xl p-8 lg:p-16 text-center border border-border">
           <h2 className="text-3xl lg:text-5xl font-bold text-[#faf6f1] mb-4">ODEBÍREJ NEWSLETTER</h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
             Nezmeškej žádné novinky, limitky nebo slevy. Žádný spam, jen to nejlepší z Illegal Beans.

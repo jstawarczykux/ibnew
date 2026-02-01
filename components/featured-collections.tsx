@@ -106,12 +106,12 @@ export function FeaturedCollections() {
         {/* Category tabs using shadcn Tabs */}
         <div className="flex justify-center mb-12">
           <Tabs defaultValue="all" onValueChange={setActiveCategory} className="w-auto">
-            <TabsList className="bg-white p-3 rounded-lg shadow-sm h-auto">
+            <TabsList className="bg-white p-3 rounded-xl shadow-sm h-auto">
               {categories.map((cat) => (
                 <TabsTrigger
                   key={cat.id}
                   value={cat.id}
-                  className="flex items-center gap-3 px-10 py-5 rounded-lg font-medium transition-all duration-300 data-[state=active]:bg-[#faf6f1] data-[state=active]:text-background data-[state=active]:shadow-sm data-[state=active]:scale-[1.02] text-background/60 hover:text-background border-none text-lg"
+                  className="flex items-center gap-3 px-10 py-5 rounded-xl font-medium transition-all duration-300 data-[state=active]:bg-[#faf6f1] data-[state=active]:text-background data-[state=active]:shadow-sm data-[state=active]:scale-[1.02] text-background/60 hover:text-background border-none text-lg"
                 >
                   <cat.Icon className="w-[45px] h-[45px] shrink-0 transition-transform duration-300" />
                   {cat.label}

@@ -22,7 +22,7 @@ export function SubscriptionModule() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
           {/* Subscription card */}
-          <div className="bg-[#faf6f1] rounded-lg p-8 lg:p-12 border border-black relative overflow-hidden group flex flex-col h-full">
+          <div className="bg-[#faf6f1] rounded-xl p-8 lg:p-12 border border-black relative overflow-hidden group flex flex-col h-full">
             <div className="absolute -right-8 -bottom-8 lg:-right-4 lg:-bottom-12 w-64 h-64 lg:w-96 lg:h-96 opacity-100 transition-transform duration-500 group-hover:scale-105 pointer-events-none">
               <Image
                 src="/illustrations/subscription.png"
@@ -62,7 +62,7 @@ export function SubscriptionModule() {
           </div>
 
           {/* B2B card - DeskPresso */}
-          <div className="bg-[#faf6f1] rounded-lg p-8 lg:p-12 border border-black relative overflow-hidden group flex flex-col h-full">
+          <div className="bg-[#faf6f1] rounded-xl p-8 lg:p-12 border border-black relative overflow-hidden group flex flex-col h-full">
             <div className="absolute -right-8 -bottom-8 lg:-right-6 lg:-bottom-4 w-64 h-64 lg:w-80 lg:h-80 opacity-100 transition-transform duration-500 group-hover:scale-105 pointer-events-none">
               <Image
                 src="/illustrations/b2b.png"
@@ -105,7 +105,7 @@ export function SubscriptionModule() {
         </div>
 
         {/* Delivery banner */}
-        <div className="bg-[#faf6f1] rounded-lg p-4 sm:p-6 lg:p-8 border border-black flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+        <div className="bg-[#faf6f1] rounded-xl p-4 sm:p-6 lg:p-8 border border-black flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
           <div className="flex items-center gap-6 md:gap-8 z-10 w-full md:w-auto">
             <div className="h-32 w-32 md:h-40 md:w-40 relative shrink-0 -my-4 md:-my-8">
               <Image
