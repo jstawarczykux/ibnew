@@ -90,7 +90,7 @@ export function ProductCard({
                             <Button
                                 size="sm"
                                 onClick={handleIncrease}
-                                className="bg-[#2d7d4f] text-white hover:bg-[#2d7d4f]/90 rounded-none px-6 !h-12 font-bold whitespace-nowrap"
+                                className="bg-[#2d7d4f] text-white hover:bg-[#2d7d4f] rounded-none px-6 !h-12 font-bold whitespace-nowrap"
                             >
                                 Do košíku
                             </Button>

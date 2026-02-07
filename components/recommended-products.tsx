@@ -37,13 +37,9 @@ export function RecommendedProducts() {
             <span className="inline-block text-pink font-mono text-sm tracking-wider uppercase mb-2">Doporučujeme</span>
             <h2 className="text-3xl lg:text-5xl font-bold text-[#faf6f1]">NEJOBLÍBENĚJŠÍ VOLBY</h2>
           </div>
-          <Button
-            variant="outline"
-            className="border-[#faf6f1] text-[#faf6f1] hover:bg-[#faf6f1] hover:text-background rounded-none self-start md:self-auto bg-transparent"
-          >
-            Zobrazit vše
-          </Button>
         </div>
+
+
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
@@ -58,7 +54,16 @@ export function RecommendedProducts() {
             />
           ))}
         </div>
+
+        <div className="text-center mt-12">
+          <Button
+            variant="outline"
+            className="border-[#faf6f1] text-[#faf6f1] hover:bg-[#faf6f1] hover:text-background rounded-none bg-transparent"
+          >
+            Zobrazit vše
+          </Button>
+        </div>
       </div>
-    </section>
+    </section >
   )
 }

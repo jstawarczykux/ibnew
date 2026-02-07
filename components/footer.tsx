@@ -21,7 +21,7 @@ export function Footer() {
             </div>
             <Button
               type="submit"
-              className="w-full sm:w-auto h-12 px-8 bg-black text-white font-bold rounded-none hover:bg-black/90 transition-all active:translate-y-1 active:translate-x-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)]"
+              className="w-full sm:w-auto h-12 px-8 bg-pink text-black font-bold rounded-none hover:bg-pink transition-all active:translate-y-1 active:translate-x-1"
             >
               ODEBÍRAT
             </Button>

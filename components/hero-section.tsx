@@ -58,10 +58,10 @@ export function HeroSection() {
           {/* Left content */}
           <div className="space-y-8 z-10 transition-all duration-500 flex flex-col justify-center">
             <div className="space-y-0 min-h-[120px] sm:min-h-[150px] lg:min-h-[180px]">
-              <h1 className="text-[64px] sm:text-[80px] lg:text-[100px] font-bebas text-white leading-[0.9] tracking-tight m-0 p-0 uppercase line-clamp-2">
+              <h1 className="text-[64px] sm:text-[80px] lg:text-[100px] font-bebas text-white leading-[1.1] tracking-tight m-0 p-0 uppercase line-clamp-2">
                 {heroSlides[currentSlide].title}
               </h1>
-              <h2 className="text-[64px] sm:text-[80px] lg:text-[100px] font-bebas text-white leading-[0.9] tracking-tight m-0 p-0 uppercase line-clamp-1">
+              <h2 className="text-[64px] sm:text-[80px] lg:text-[100px] font-bebas text-white leading-[1.1] tracking-tight m-0 p-0 uppercase line-clamp-1">
                 {heroSlides[currentSlide].subtitle}
               </h2>
             </div>

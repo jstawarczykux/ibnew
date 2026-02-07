@@ -117,7 +117,7 @@ export function BrandStory() {
                 <p className="text-sm text-background/60">Specialty grade</p>
               </div>
             </div>
-            <Button size="lg" className="bg-background text-[#faf6f1] hover:bg-background/90 rounded-none px-8 group">
+            <Button size="lg" className="bg-[#2d7d4f] text-[#faf6f1] hover:bg-[#2d7d4f] rounded-none px-8 font-bold group">
               Celý náš příběh
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>

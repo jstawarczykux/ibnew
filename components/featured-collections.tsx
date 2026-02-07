@@ -139,8 +139,7 @@ export function FeaturedCollections() {
         <div className="text-center mt-12">
           <Button
             size="lg"
-            variant="outline"
-            className="border-background text-background hover:bg-background hover:text-[#faf6f1] rounded-none px-8 bg-transparent"
+            className="bg-[#2d7d4f] text-[#faf6f1] hover:bg-[#2d7d4f] rounded-none px-8 font-bold"
           >
             Zobrazit všechny kávy
           </Button>

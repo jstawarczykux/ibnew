@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
 import { Instagram, Quote } from "lucide-react"
 
 const galleryImages = [
@@ -69,15 +70,17 @@ export function CommunityGallery() {
         </div>
 
         <div className="text-center mb-16">
-          <a
-            href="https://instagram.com/illegal__beans"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[#2d7d4f] font-semibold hover:text-pink transition-colors"
-          >
-            <Instagram className="h-5 w-5" />
-            Sledovat na Instagramu
-          </a>
+          <Button asChild className="bg-[#2d7d4f] text-[#faf6f1] hover:bg-[#2d7d4f] rounded-none px-8 font-bold h-12">
+            <a
+              href="https://instagram.com/illegal__beans"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2"
+            >
+              <Instagram className="h-5 w-5 mr-2" />
+              Sledovat na Instagramu
+            </a>
+          </Button>
         </div>
 
         {/* Testimonials */}

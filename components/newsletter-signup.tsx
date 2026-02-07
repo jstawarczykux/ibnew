@@ -43,7 +43,7 @@ export function NewsletterSignup() {
               type="submit"
               size="lg"
               disabled={status === "loading" || status === "success"}
-              className="h-14 px-8 bg-pink text-background hover:bg-pink/90 rounded-none font-medium"
+              className="h-14 px-8 bg-pink text-background hover:bg-pink rounded-none font-medium"
             >
               {status === "loading" ? (
                 <Loader2 className="h-5 w-5 animate-spin" />

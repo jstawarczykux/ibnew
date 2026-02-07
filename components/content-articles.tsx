@@ -40,12 +40,6 @@ export function ContentArticles() {
             </span>
             <h2 className="text-3xl lg:text-5xl font-bold text-background">Illegální články</h2>
           </div>
-          <Button
-            variant="outline"
-            className="border-background text-background hover:bg-background hover:text-[#faf6f1] rounded-none self-start md:self-auto bg-transparent"
-          >
-            Všechny články
-          </Button>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -84,6 +78,14 @@ export function ContentArticles() {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button
+            className="bg-[#2d7d4f] text-[#faf6f1] hover:bg-[#2d7d4f] rounded-none px-8 font-bold"
+          >
+            Všechny články
+          </Button>
         </div>
       </div>
     </section>
